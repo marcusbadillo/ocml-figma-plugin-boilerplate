@@ -3,26 +3,45 @@
   "version": "1.0.0",
   "private": true,
   "description": "OCML Figma Plugin Boilerplate",
-  "main": "dist/code.js",
-  "type": "module",
+  "author": "Marcus Badillo",
+  "license": "MIT",
   "scripts": {
     "build": "tsx scripts/build.ts",
     "watch": "tsx scripts/build.ts --watch",
     "clean": "tsx scripts/clean.ts",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "fig:build": "build-figma-plugin --typecheck --minify",
+    "fig:watch": "build-figma-plugin --typecheck --watch"
   },
-  "author": "Marcus Badillo",
-  "license": "MIT",
   "devDependencies": {
+    "@create-figma-plugin/build": "^4.0.3",
+    "@create-figma-plugin/tsconfig": "^4.0.3",
     "@figma/eslint-plugin-figma-plugins": "^1.0.0",
     "@figma/plugin-typings": "^1.121.0",
     "@types/node": "^25.0.3",
+    "@types/prismjs": "1.26.3",
     "@typescript-eslint/eslint-plugin": "^8.52.0",
     "@typescript-eslint/parser": "^8.52.0",
     "eslint": "^9.39.2",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.52.0"
+  },
+  "dependencies": {
+    "@create-figma-plugin/ui": "^4.0.3",
+    "@create-figma-plugin/utilities": "^4.0.3",
+    "preact": ">=10",
+    "prismjs": "^1.30.0",
+    "react-simple-code-editor": "0.13.1"
+  },
+  "figma-plugin": {
+    "editorType": [
+      "figma"
+    ],
+    "id": "test-react-editor",
+    "name": "Test React Editor",
+    "main": "src/main.ts",
+    "ui": "src/ui.tsx"
   }
 }

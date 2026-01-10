@@ -1,17 +1,13 @@
 {
+  "extends": "@create-figma-plugin/tsconfig",
   "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["ES2022", "DOM"],
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "strict": true,
-    "types": ["@figma/plugin-typings", "node"],
-    // "skipLibCheck": true,
-    // "skipLibCheck": true,
-    // "exactOptionalPropertyTypes": true,
-    // "noUncheckedIndexedAccess": true
-    "noEmit": true
-    // "typeRoots": ["./node_modules/@types", "./node_modules/@figma"]
+    "paths": {
+      "react": ["./node_modules/preact/compat"],
+      "react-dom": ["./node_modules/preact/compat"]
+    },
+    "allowArbitraryExtensions": true,
+    "skipLibCheck": true,
+    "typeRoots": ["node_modules/@figma", "node_modules/@types"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "scripts/**/*.ts"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
 }
