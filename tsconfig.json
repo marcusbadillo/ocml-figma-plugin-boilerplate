@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "types": ["@figma/plugin-typings", "node"],
+    // "skipLibCheck": true,
+    // "skipLibCheck": true,
+    // "exactOptionalPropertyTypes": true,
+    // "noUncheckedIndexedAccess": true
+    "noEmit": true
+    // "typeRoots": ["./node_modules/@types", "./node_modules/@figma"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "scripts/**/*.ts"]
+}

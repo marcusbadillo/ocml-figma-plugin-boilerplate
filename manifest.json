@@ -1,0 +1,14 @@
+{
+  "name": "OCML Figma Plugin Boilerplate",
+  "id": "REPLACE_WITH_FIGMA_PLUGIN_ID",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "networkAccess": {
+    "allowedDomains": ["none"]
+  }
+}
