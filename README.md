@@ -90,3 +90,5 @@ see manifest reference below and update as needed
 
 - TypeScript
   <https://www.typescriptlang.org/>
+
+This repository is experimental and will be migrated to OC Media Lab once stabilized.
