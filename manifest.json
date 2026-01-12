@@ -3,8 +3,8 @@
   "editorType": [
     "figma"
   ],
-  "id": "test-react-editor",
-  "name": "Test React Editor",
+  "id": "ocml-figma-plugin-boilerplate",
+  "name": "OCML Figma Plugin Boilerplate",
   "main": "build/main.js",
   "ui": "build/ui.js"
 }

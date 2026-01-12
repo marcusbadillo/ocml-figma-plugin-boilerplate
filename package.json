@@ -6,13 +6,10 @@
   "author": "Marcus Badillo",
   "license": "MIT",
   "scripts": {
-    "build": "tsx scripts/build.ts",
-    "watch": "tsx scripts/build.ts --watch",
-    "clean": "tsx scripts/clean.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "fig:build": "build-figma-plugin --typecheck --minify",
-    "fig:watch": "build-figma-plugin --typecheck --watch"
+    "build": "build-figma-plugin --typecheck --minify",
+    "dev": "build-figma-plugin --typecheck --watch"
   },
   "devDependencies": {
     "@create-figma-plugin/build": "^4.0.3",
@@ -39,8 +36,8 @@
     "editorType": [
       "figma"
     ],
-    "id": "test-react-editor",
-    "name": "Test React Editor",
+    "id": "ocml-figma-plugin-boilerplate",
+    "name": "OCML Figma Plugin Boilerplate",
     "main": "src/main.ts",
     "ui": "src/ui.tsx"
   }
